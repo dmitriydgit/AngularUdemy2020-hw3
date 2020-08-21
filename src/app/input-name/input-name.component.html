@@ -1,0 +1,10 @@
+<H3>Input-name works!</H3>
+
+<hr>
+
+<label for='myInput'>User</label>
+<input type="text" class="form-control" id="myInput" placeholder="Type the name " [(ngModel)]="userName">
+
+<H3>{{userName}}</H3>
+
+<button class="btn btn-primary" (click)="onUserReset($event)" [disabled]="!userName">Reset user</button>

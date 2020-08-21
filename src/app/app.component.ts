@@ -11,5 +11,6 @@ h3{
 `]
 })
 export class AppComponent {
+	title = "my-dream-app"
 
 }

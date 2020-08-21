@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,7 +10,7 @@ import { TryComponent } from "./Try/try.component";
 import { WarningAlertComponent } from "./warning-alert/warning-alert.component";
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { LoadingComponent } from './loading/loading.component';
-
+import { InputNameComponent } from "./input-name/input-name.component";
 
 
 @NgModule({
@@ -21,11 +22,13 @@ import { LoadingComponent } from './loading/loading.component';
 		ServersComponent,
 		WarningAlertComponent,
 		SuccessAlertComponent,
-		LoadingComponent
+		LoadingComponent,
+		InputNameComponent
 	],
 	imports: [
 		BrowserModule,
-		AppRoutingModule
+		AppRoutingModule,
+		FormsModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
