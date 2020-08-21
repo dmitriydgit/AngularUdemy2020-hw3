@@ -1,0 +1,12 @@
+<p>hw3 works!</p>
+
+<button class="btn btn-primary" (click)="onTogleDisplaying()">Display Details</button>
+
+<p *ngIf="showParagraph; else placeholder">Secret password = Tuna</p>
+<ng-template #placeholder>
+	<p>Hidden</p>
+</ng-template>
+<hr>
+<ul *ngFor="let click of clicksStorage;let indexOfelement=index;"
+	[ngStyle]="{backgroundColor: getColor(indexOfelement)}" [ngClass]="{whiteText:indexOfelement>=5}">{{indexOfelement}} -
+	{{click}} </ul>

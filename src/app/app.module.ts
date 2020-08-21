@@ -11,6 +11,7 @@ import { WarningAlertComponent } from "./warning-alert/warning-alert.component";
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { LoadingComponent } from './loading/loading.component';
 import { InputNameComponent } from "./input-name/input-name.component";
+import { Hw3Component } from './hw3/hw3.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { InputNameComponent } from "./input-name/input-name.component";
 		WarningAlertComponent,
 		SuccessAlertComponent,
 		LoadingComponent,
-		InputNameComponent
+		InputNameComponent,
+		Hw3Component
 	],
 	imports: [
 		BrowserModule,
